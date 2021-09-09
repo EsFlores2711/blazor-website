@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BLAZOR</title>
+        <script src="https://kit.fontawesome.com/5ee638965e.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="CSS/Style.css">
+    </head>
+
+    <body>
+        <div class="toggle" onclick="toggleMenu();"></div>
+
+        <div class="sidebar">
+            <ul class="menu">
+                <li><a href="#inicio" onclick="toggleMenu();" ><strong>Inicio</strong></a></li>
+                <li><a href="#Punto_1" onclick="toggleMenu();" ><strong>Definición</strong></a></li>
+                <li><a href="#Punto_2" onclick="toggleMenu();" ><strong>¿Es Necesario concocer?</strong></a></li>
+                <li><a href="#Punto_3" onclick="toggleMenu();" ><strong>Importancia</strong></a></li>
+                <li><a href="#Punto_4" onclick="toggleMenu();" ><strong>Características</strong></a></li>
+                <li><a href="#Punto_5" onclick="toggleMenu();" ><strong>Tipo, Estructura, etc...</strong></a></li>
+                <li><a href="#Punto_6" onclick="toggleMenu();" ><strong>Aplicación o Usos</strong></a></li>
+                <li><a href="#Punto_7" onclick="toggleMenu();" ><strong>Ejemplo</strong></a></li>
+                <li><a href="#Integrantes" onclick="toggleMenu();" ><strong>Integrantes</strong></a></li>
+            </ul>
+        </div>
+
+        <section class="banner" id="inicio">
+            <div class="imgSidebar">
+                <img src="Imagenes/Blazor 1.jpg">
+            </div>
+            <div class="contentBx">
+                <h5 class="logoText">B L A Z O R</h5>
+                <div>
+                    <h4><span>Hola,</span></h4>
+                    <h3>Internauta</h2>
+                    <h2>Hoy conoceras un poco de </h2>
+                    <h1>BLAZOR</h1>
+                </div>
+                <ul class="sci">
+                    <li><a href="https://www.facebook.com/Blazor-107523054120909" target="_blank"><img src="Imagenes/Facebook.png"></a></li>
+                    <li><a href="https://www.youtube.com/results?search_query=blazor" target="_blank"><img src="Imagenes/Youtube.png"></a></li>
+                    <li><a href="https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor" target="_blank"><img src="Imagenes/Blazor.png"></a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="Punto_1" id="Punto_1" >
+            <div class="Titulo white">
+                <h2>Definición de BLAZOR</h2>
+            </div>
+                <div class="Definicion-text-Punto_1">
+                    <p>
+                        <br><br>
+                        Blazor es un proyecto desarrollado por Microsoft creado para permitir crear SPAs únicamente usando como 
+                        lenguajes de programación C# y Razor Pages, haciendo nula la necesidad de programar en JavaScript o frameworks 
+                        derivados.
+                        <br><br>
+                        Blazor es un framework del equipo de Microsoft ASP.NET que permite a los desarrolladores escribir aplicaciones
+                         de una página (SPA) sin Javascript. Tiene la opción de ser ejecutado en el navegador del cliente o de ejecutarse 
+                         en el servidor. Incluye todo lo necesario para poder construir aplicaciones SPA potentes como:
+                         <br><br>
+                         <strong>•</strong> Componentes <br>
+                         <strong>•</strong> Implementación de componentes basada en MVVM <br>
+                         <strong>•</strong> Bindings <br>
+                         <strong>•</strong> Routing <br>
+                         <strong>•</strong> Inyección de dependencias <br>
+                         <strong>•</strong> Gestión de errores <br>
+                         <strong>•</strong> Plantillas para la UI <br>
+                         <strong>•</strong> Herramientas de compilación <br>
+                         <strong>•</strong> Herramientas de depuración
+                         <br><br>
+                        El framework está construido en .NET que se ejecuta en el navegador a través de WebAssembly, y se basa en 
+                        HTML, CSS y otras tecnologías web estándar. Blazor apunta en tiempo de ejecución a Mono WebAssembly, permitiendo 
+                        así que .NET se ejecute en el navegador del cliente. El nombre está inspirado en Browser + Razor (que es un motor 
+                        de vistas en ASP.NET). EN esta configuración, incluyendo los archivos .dll, se entregan al cliente y se ejecutan 
+                        en el tiempo de ejecución de Mono WebAssembly. Esto es lo que hace posible la transición de Javascript a C#.
+                        <br><br>
+                        El objetivo de Microsoft es entrar de manera directa en el mundo de los SPA a través de Blazor, teniendo una curva 
+                        de aprendizaje plana para los desarrolladores .NET, abstrayendo la complejidad que requiere el tener que trabajar 
+                        con frameworks Javascript. En consecuencia, se construirán aplicaciones web eriquecidas usando únicamente HTML, CSS 
+                        y C# en lugar de Javascript
+                        <br><br>
+                        <strong> Blazor presenta dos enfoques claramente diferenciados</strong> 
+                        <br><br>
+                        <strong><strong>•</strong></strong> Blazor Server: se construye el DOM que se ha de enviar al cliente desde el servidor. Es el modelo más 
+                        tradicional, cuyo objetivo es sustituir el modelo Web Forms .NET. su principal función es la interacción en 
+                        tiempo real entre cliente y servidor a través de SignalR.<br><br>
+                        <strong><strong>•</strong></strong> Blazor WebAssembly: modelo SPA basado en WebAssembly, es decir, la construcción del DOM se realizara en el 
+                        lado del cliente.
+
+                    </p>
+            </div>
+        </section>
+
+        <section class="Punto_2" id="Punto_2" >
+            <div class="Titulo">
+                <h2>Por que es necesario conocer y aplicar la librería o framework BLAZOR</h2>
+            </div>
+                <div class="Definicion-text-Punto_2">
+                    <p>
+                        <br><br>
+                        <h3><strong>Tiene beneficios al ejecutar en cliente</strong></h3>
+                        <br>
+                        <strong>•</strong>	Se compila a archivos estáticos, lo que significa que, no hay necesidad de un tiempo de ejecución 
+                            .NET en el servidor.<br>
+                        <strong>•</strong>	El trabajo se descarga del servidor al cliente.<br>
+                        <strong>•</strong>	Las aplicaciones se pueden ejecutar en un estado offline.<br>
+                        <strong>•</strong>	Se comparte código, por ejemplo, los objetos de C# pueden ser compartidos entre el cliente y el servidor 
+                            fácilmente para nuestras llamadas al Server y Cliente}.<br>
+                        <br><br>
+                        <h3><strong>Cuenta con los beneficios de Blazor Server</strong></h3>
+                        <br>
+                        <strong>•</strong>	Se ejecuta en el tiempo de ejecución completo del núcleo de .NET.<br>
+                        <strong>•</strong>	Ciclo de desarrollo rápido.<br>
+                        <strong>•</strong>	Pequeño tamaño de descarga inicial.<br>
+                        <strong>•</strong>	El código se mantiene en el servidor y no se descarga al cliente.<br>
+                        <br><br>
+                        <h3><strong>Algunos puntos a saber sobre esta librería o framework que se deben tener en cuenta</strong></h3>
+                        <br>
+                        <strong>•</strong>	No funciona bien en ambientes de alta latencia.<br>
+                        <strong>•</strong>	No funciona offline siempre se requiere una conexión constante al servidor.<br>
+                        <strong>•</strong>	Gran demanda de recursos en el servidor.<br>
+                    </p>
+            </div>
+        </section>
+
+        <section class="Punto_3" id="Punto_3" >
+            <div class="Titulo white">
+                <h2>Importancia en Desarrollo Web <br> FRONTEND</h2>
+            </div>
+                <div class="Definicion-text-Punto_3">
+                    <p>
+                        <br><br>
+                        Esta nueva tecnología de Microsoft permite Desarrollar Aplicaciones Web usando C# y la plataforma .NET, 
+                        de manera rápida y robusta, creando componentes reutilizables y separando las responsabilidades de la interfaz 
+                        de usuario del resto de la aplicación.
+                        <br><br>
+                        Gracias a Blazor podrás librarte del Front-End de dos maneras:
+                        <br><br>
+                        <strong><strong>•</strong> La maquetación con HTML y CSS:</strong> aunque es inevitable tener que hacerla, la interfaz y los layouts están 
+                        completamente separados de la lógica y el modelo. Así, el equipo de desarrollo puede hacer simplemente un 
+                        boceto con los elementos necesarios, y el equipo de diseño se encargará de definirla y dejarla lista en paralelo. 
+                        Es más, como todo son componentes reutilizables, una vez definidos puedes reutilizarlos por toda la aplicación o 
+                        en otras, sin repetir el trabajo. Una gran ventaja para todos. Existen ya en el mercado multitud de componentes 
+                        predefinidos para acelerar el desarrollo, tanto comerciales como gratuitos y de código abierto.
+                        <br><br>
+                        <strong><strong>•</strong> El lenguaje JavaScript:</strong> todo el código, la lógica, los modelos, etc. los puedes hacer en C# y aprovechado 
+                        toda la potencia de la plataforma .NET. Incluso los eventos del navegador los gestionas con este lenguaje. Así 
+                        que si quieres te puedes olvidar del uso de JavaScript. Además, como ambos lenguajes pueden interoperar, si 
+                        quieres sacar partido al enorme ecosistema de bibliotecas JavaScript, podrás usarlas desde C#. Y al viceversa: 
+                        puedes llamar a código C# desde código JavaScript preexistente. Una enorme ventaja a la hora del desarrollo web.
+                        <br><br>
+                        Además de esto, Blazor genera aplicaciones de tipo SPA (Single Page Application), sin recarga de páginas y con 
+                        mayor velocidad de interacción con el usuario que las aplicaciones convencionales. Por eso te ahorras tener que 
+                        aprender algún framework JavaScript como Angular, Vue.js o React.
+                        <br><br>
+                        Si vienes de tecnologías de desarrollo Web antiguas de Microsoft como ASP.NET WebForms te resultará mucho más 
+                        fácil que otros frameworks, como ASP.NET MVC.
+                        <br><br>
+                        Blazor se basa en .NET Core (en breve .NET 5) y en todo el aprendizaje de estos años en ASP.NET Core, por lo 
+                        que a pesar de su novedad es robusta, escalable y con un gran rendimiento. De hecho está soportada oficialmente 
+                        a largo plazo por Microsoft junto con el resto de la plataforma.
+                        <br><br>
+                        Es ideal para crear aplicaciones Web de todo tipo, desde aplicaciones de gestión o corporativas, hasta un 
+                        emulador de un ZX Spectrum, que puedes ejecutar desde un servidor de aplicaciones en Windows o Linux, 
+                        o directamente en cualquier CDN "tonta" (no necesitas tecnologías de servidor si no quieres).
+
+                    </p>
+            </div>
+        </section>
+
+        <section class="Punto_4" id="Punto_4" >
+            <div class="Titulo">
+                <h2>Caracteristicas, Ventajas y Desventajas</h2>
+            </div>
+                <div class="Definicion-text-Punto_4">
+                    <p>
+                        <br><br>
+                        Blazor está inspirado en los modernos UI frameworks como Angular, React y Vue. Soporta todas las características 
+                        necesarias para facilitar el desarrollo de SPA (single-page application). Las características soportas por Blazor 
+                        son:
+                        <br><br>
+                        <strong><strong>•</strong> Inyección de dependencias (Dependency Injection):</strong>  Esto permite usar servicios por inyección dentro de los 
+                        componentes.<br>
+
+                        <strong><strong>•</strong> Diseño (Layout):</strong>  podemos compartir elementos comunes de la interfaz de usuario (por ejemplo, menús) en las 
+                        páginas mediante la función de diseños.<br>
+
+                        <strong><strong>•</strong> Enrutamiento (Routing):</strong>  podemos redirigir la solicitud del cliente de un componente a otro con la ayuda del 
+                        enrutamiento.<br>
+
+                        <strong><strong>•</strong> JavaScript interop: </strong> Esto permite invocar un método de C# desde JavaScript, y podemos llamar a una función 
+                        JavaScript o API desde código C#.<br>
+
+                        <strong><strong>•</strong> Volver a cargar en tiempo de compilación:</strong> durante el desarrollo de la aplicación, la página de la aplicación 
+                        se vuelve a cargar en el navegador a medida que vamos desarrollándola.<br>
+
+                        <strong><strong>•</strong> Formularios y validación:</strong>  podemos crear formularios interactivos para manejar las entradas de los usuarios y 
+                        aplicar técnicas de validación para manejar cualquier error en el formulario.<br><br>
+
+
+                        Bueno hasta aquí esta introducción acerca de Blazor, su características y funcionalidades. Una importante 
+                        aclaración que quería remarcar aquí es que Blazor está en un marco experimental en este momento y no debería ser 
+                        usado para crear aplicaciones en ambiente de producción.  En una siguiente entrada, veremos cómo funciona Blazor 
+                        desarrollando un ejemplo con esta tecnología. Saludos.<br><br>
+
+                        <strong>¿Cuáles son las ventajas de todo esto?</strong>
+                        <br><br>
+                        Bueno, ya por solo sustituir Javascript por C# por el lado cliente, puede aportarnos ventajas interesantes. 
+                        Aparte de ser C# un lenguaje muy superior, también es posible utilizar bibliotecas .NET existentes, compartir 
+                        código entre cliente y servidor o utilizar entornos muy potentes como Visual Studio durante la fase de desarrollo.
+                        <br><br>
+                        Lo que si que hay que tener en cuenta es que provocará que la primera carga de la aplicación sea más lenta, 
+                        aunque la memoria caché nos ayudaría en eso. Aunque nos alejemos del ecosistema Javascript (sabiendo que es muy 
+                        grande), también es cierto que desde Blazor es posible interoperar con bibliotecas JS existentes.
+                        <br><br>
+                        
+                        <strong>VENTAJAS</strong>
+                        <br><br>
+                        Por el lado positivo, la carga inicial sería mucho más rápida ya que no hay nada que descargar desde el 
+                        cliente. También, como el código se ejecutaría en el servidor, podríamos usar todo tipo de bibliotecas y 
+                        componentes para .NET.
+                        <br><br>
+
+                        <strong>DESVENTAJA</strong> 
+                        <br><br>
+                        Por el lado negativo, es que el hecho de que cada evento en el UI deba de ser enviado y procesador 
+                        por el servidor, añade una latencia que no todas las aplicaciones podrán soportar sin destrozar su usabilidad. 
+                        Además, el mantenimiento del estado en memoria podría limitar las opciones de escalabilidad de los sistemas.
+                        <br><br>
+
+                        <strong>Conclusion: </strong> 
+                        Blazor es un framework del que seguro que vamos a oír hablar bastante en el futuro y con mucha razón. Aunque 
+                        aún está empezando a funcionar y quedan bastantes cosas por pulir, desde Dotnetsafer te recomendamos no perderlo 
+                        de vista porque las expectativas realmente son altas. 
+                    </p>
+            </div>
+        </section>
+
+        <section class="Punto_5" id="Punto_5" >
+            <div class="Titulo white">
+                <h2>Tipo, Estructura, Sintaxis, <br> Semántica y Elementos</h2>
+            </div>
+                <div class="Definicion-text-Punto_5">
+                    <p>
+                        <br><br>
+                         <strong>¿Cómo se estructuran las aplicaciones en Blazor?</strong> 
+                        <br><br>
+                        <center>
+                            <source srcset="Imagenes/Blazor 3.jpg" media="(max-width: 480px)">
+                            <source srcset="Imagenes/Blazor 3.jpg" media="(max-width: 800px)">
+                            <img src="Imagenes/Blazor 3.jpg" width="40%">
+                        </center>
+                    </p>
+                    <p>
+                        <br>
+                        La forma de estructurar una aplicación Blazor se parece mucho a otros frameworks SPA. Muy a vista de pájaro, 
+                        consiste en un Razor Component raíz, que normalmente aloja el sistema de routing. Éste se encargará de analizar 
+                        los cambios en las rutas del navegador para mostrar las páginas de la aplicación.
+                        <br><br>
+                        Las páginas, que también se implementan como Razor Components, pueden utilizar dentro, a su vez, otros componentes, 
+                        que pueden estar compuestos a su vez por otros componentes, y así hasta el infinito. Lo único que hace diferente a 
+                        una página de un componente es que ésta incluye la directiva @page para indicar al sistema de routing cómo puede ser 
+                        localizada (algo bastante similar a como lo hacemos al desarrollar con Razor Pages en MVC).
+                        <br><br>
+                        Por tanto, para crear la interfaz de una aplicación Blazor, lo único que tendremos que hacer es implementar Componentes 
+                        Razor. Aparte, claro está, tendremos que implementar otro tipo de clases y estructuras habituales: servicios de aplicación, 
+                        acceso a datos, lógica de negocio, etc., que pueden ser utilizadas desde los archivos .razor gracias a la inyección de 
+                        dependencias.
+                        <br><br>
+                        <strong>¿Que tiene por dentro un Componente Blazor?</strong>
+                        <br><br>
+                        Pues si has utilizado alguna vez Blazor Pages o MVC,  es muy parecida a lo que ya conoces para el desarrollo de páginas o 
+                        vistas.Por ejemplo, el siguiente código podría ser un Componente Blazor que actúa como página y que en su interior utiliza 
+                        otro componente:
+                        <br><br>
+                        <center>
+                            <source srcset="Imagenes/Blazor 4.jpg" media="(max-width: 480px)">
+                            <source srcset="Imagenes/Blazor 4.jpg" media="(max-width: 800px)">
+                            <img src="Imagenes/Blazor 4.jpg" width="50%">
+                        </center>
+                    </p>
+                    <p>
+                        <br>  
+                        Fíjate en que con la directiva @page indicamos al sistema de routing mediante qué ruta debe ser accesible el 
+                        contenido. Ya en su interior, podemos observar que utilizamos un Componente Blazor llamado <strong>&lt;Multiplication&gt;</strong>, 
+                        que mostrará tablas de multiplicar. Puedes ver el funcionamiento en la animación anterior.
+                        <br><br> 
+                        A continuación, veamos el código del componente <strong>&lt;Multiplication&gt;</strong>, definido en el archivo Multiplication.razor 
+                        de la siguiente forma:
+                        <br><br>
+                        <center>
+                            <source srcset="Imagenes/Blazor 5jpg" media="(max-width: 480px)">
+                            <source srcset="Imagenes/Blazor 5.jpg" media="(max-width: 800px)">
+                            <img src="Imagenes/Blazor 5.jpg" width="50%">
+                        </center>
+                    </p>
+                    <p>
+                        <br>
+                        En este componente destacan varios aspectos:
+                        <br><br>
+                        <strong>•</strong> El uso de sintaxis Blazor, esa mezcla de HTML y C# que encontramos a lo largo del contenido: expresiones de 
+                        salida tipo @var o @(var) para mostrar valores de variables, o incluso los clásicos bucles @for para mostrar 
+                        listas o colecciones.
+                        <br><br>
+                        <strong>•</strong> La existencia del bloque @code para definir miembros e implementar comportamientos en C#, que podría asimilarse
+                        a un típico view-model en otros frameworks MVVM.
+                        <br><br>
+                        <strong>•</strong> El uso de la directiva @bind para bindear el valor actual del desplegable a la propiedad Number, que además 
+                        actúa como parámetro para que las páginas o componentes que lo utilicen puedan establecerlo (nosotros lo habíamos 
+                        hecho con el valor "1" desde la página).
+                        <br><br>
+                        <strong>•</strong> Podemos ver también el uso de @onclick para asociar eventos "click" del DOM a handlers escritos en C# en la 
+                        sección @code.
+                        <br><br><br>
+                        <strong>Sintaxis de Blazor</strong>
+                        <br><br>
+                        Blazor admite C# y usa el @ símbolo para realizar la transición de HTML a C#. Blazor evalúa las expresiones de C# 
+                        y las representa en la salida HTML.Cuando un @ símbolo va seguido de una palabra clave Blazor reservada, pasa a 
+                        marcado específico de Blazor. En caso contrario, realiza la transición a C# simple.
+                        <br><br>
+                        Para escapar un @ símbolo en Blazor el marcado, use un segundo @ símbolo:<br><br>
+                        <strong><strong>•</strong> CSHTML:  &lt;p&gt; @@Username &lt;/p&gt;</strong>  <br><br>
+                        El código aparecerá en HTML con un solo símbolo @: <br><br>
+                        <strong><strong>•</strong> HTML:  &lt;p> @Username &lt;/p&gt;</strong>  <br><br>
+                        El contenido y los atributos HTML que tienen direcciones de correo electrónico no tratan el símbolo @ como un 
+                        carácter de transición. Las direcciones de correo electrónico del ejemplo siguiente no se tocan mediante Blazor 
+                        el análisis:
+                        <br><br>
+                        <strong>
+                        <strong>•</strong> CSHTML:  &lt;a href="mailto:Support@contoso.com"&gt; Support@contoso.com &lt;/a&gt;
+                        </strong> 
+                    </p>
+            </div>
+        </section>
+
+        <section class="Punto_6" id="Punto_6" >
+            <div class="Titulo">
+                <h2>Algunas Aplicaciones o Usos de BLAZOR</h2>
+            </div>
+                <div class="Definicion-text-Punto_6">
+                    <p>
+                        <br> <br>
+                        <strong>Aplicaciones al mejoramiento con el uso con blazor </strong> 
+                        <br> <br>
+                        Blazor provee todos los beneficios de un framework de UI en el lado de cliente (y opcionalmente en el servidor):
+                        <br> <br>
+                        <strong><strong>•</strong></strong> Layout  <br>
+                        <strong><strong>•</strong></strong> Routing  <br>
+                        <strong><strong>•</strong></strong> Formularios y validación <br>
+                        <strong><strong>•</strong></strong> Inyección de dependencias <br>
+                        <strong><strong>•</strong></strong> Modelo de componentes UI <br>
+                        <strong><strong>•</strong></strong> Renderizado de UI en servidor <br>
+                        <strong><strong>•</strong></strong> Interoperabilidad con Javascript <br>
+                        <strong><strong>•</strong></strong> Live-reloading durante el desarrollo <br>
+                        <br>
+
+                        Junto a los beneficios que otorgan otros frameworks, encontramos beneficios propios de Blazor, como son:
+                        <br> <br>
+                        <strong><strong>•</strong></strong> Uso de librerías en .NET Estándar 2.0 o superior <br>
+                        <strong><strong>•</strong></strong> Funcionamiento sin necesidad de ejecutar .NET en el servidor <br>
+                        <strong><strong>•</strong></strong> Reducción del tamaño del payload para disminuir los tiempos de descarga <br>
+                        <br>
+
+                        Por último, se pueden destacar los siguientes beneficios de utilizar .NET en un navegador:  
+                        <br> <br>
+                        <strong><strong>•</strong></strong> Velocidad y escalabilidad <br>
+                        <strong><strong>•</strong></strong> Estabilidad y consistencia <br>
+                        <strong><strong>•</strong></strong> Uso de lenguajes modernos e innovadores <br>
+                        <strong><strong>•</strong></strong> Aprovechamiento de skills existentes para un desarrollo full-stack <br>
+                        <strong><strong>•</strong></strong> Desarrollo con herramientas líderes, como la familia de productos Visual Studio <br>
+                        <strong><strong>•</strong></strong> Amplia compatibilidad con navegadores (es compatible con los navegadores líderes de escritorio y móvil) <br>
+
+                    </p>
+            </div>
+        </section>
+
+        <section class="Punto_7" id="Punto_7" >
+            <div class="Titulo white">
+                <h2>Ejemplo del uso de BLAZOR</h2>
+            </div>
+                <div class="Definicion-text-Punto_7">
+                    <p>
+                        <br><br>
+                        Este es un pequeño ejemplo del uso de BLAZOR, a continuación se les mostrara una imagen de como
+                        es la aplicación.
+                        <br><br>
+                        <center>
+                            <source srcset="Imagenes/Ejemplo 2.gi" style="width: 300px" media="(max-width: 480px)">
+                            <source srcset="Imagenes/Ejemplo 2.gi" style="width: 300px" media="(max-width: 800px)">
+                            <img src="Imagenes/Ejemplo 2.gif" width="75%">
+                        </center>
+                    </p>
+                    <p>
+                        <br>
+                        Aqui dejaremos un peqeño botón de descargar de nuestro archivo alojado en <strong>Google Drive</strong> 
+                        por si desean descargarlo y probarlo ustedes mismos.
+                        <br><br><br>
+                        <center>
+                            <a href="https://bit.ly/3A3fFEM" target="_blank"> 
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <strong>¡ DESCARGA !</strong> 
+                            </a>
+                        </center>
+                        
+                    </p>
+            </div>
+        </section>
+
+        <section class="Punto_9" id="Integrantes" >
+            <div class="Titulo white">
+                <h2>Creadores del WebSite <br> </h2>
+            </div>
+            <div class="Conteiner-Card">
+                <div class="card">
+                    <div class="Content-Card">
+                        <div class="imgBx-Card"><img src="Imagenes/Estudiante.jpg"></div>
+                        <div class="ContentBx-Card">
+                            <h3>Cristian Flores <br><br> <span>1590-18-3448</span></h3>
+                        </div>
+                    </div>
+                    <ul class="sci-card">
+                        <li style="--i:1"><a href="https://github.com/EsFlores2711" target="_blank" ><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                        <li style="--i:2"><a href="mailto:cflorec5@miumg.edu.gt" target="_blank" ><i class="fa fa-envelope-open" aria-hidden="true"></i></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <div class="Content-Card">
+                        <div class="imgBx-Card"><img src="Imagenes/Estudiante.jpg"></div>
+                        <div class="ContentBx-Card">
+                            <h3>Boris Pivaral <br><br> <span>1590-18-3796</span></h3>
+                        </div>
+                    </div>
+                    <ul class="sci-card">
+                        <li style="--i:1"><a href="https://github.com/BorisPivaral" target="_blank" ><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                        <li style="--i:2"><a href="mailto:bpivarals@miumg.edu.gt" target="_blank" ><i class="fa fa-envelope-open" aria-hidden="true"></i></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <div class="Content-Card">
+                        <div class="imgBx-Card"><img src="Imagenes/Estudiante.jpg"></div>
+                        <div class="ContentBx-Card">
+                            <h3>Hilario Quevedo <br><br> <span>1590-18-24811</span></h3>
+                        </div>
+                    </div>
+                    <ul class="sci-card">
+                        <li style="--i:1"><a href="https://github.com/HilarioQuevedo" target="_blank" ><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                        <li style="--i:2"><a href="mailto:hquevedop@miumg.edu.gt" target="_blank" ><i class="fa fa-envelope-open" aria-hidden="true"></i></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <div class="Content-Card">
+                        <div class="imgBx-Card"><img src="Imagenes/Estudiante.jpg"></div>
+                        <div class="ContentBx-Card">
+                            <h3>Gerardo González <br><br> <span>1590-16-18372</span></h3>
+                        </div>
+                    </div>
+                    <ul class="sci-card">
+                        <li style="--i:1"><a href="https://github.com/yeragm11" target="_blank" ><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                        <li style="--i:2"><a href="mailto:ggonzalezm5@miumg.edu.gt" target="_blank" ><i class="fa fa-envelope-open" aria-hidden="true"></i></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <div class="Content-Card">
+                        <div class="imgBx-Card"><img src="Imagenes/Estudiante.jpg"></div>
+                        <div class="ContentBx-Card">
+                            <h3>Mario Cano <br><br> <span>1690-16-8174</span></h3>
+                        </div>
+                    </div>
+                    <ul class="sci-card">
+                        <li style="--i:1"><a href="https://github.com/M4ri0cano" target="_blank" ><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                        <li style="--i:2"><a href="mailto:mcanom4@miumg.edu.gt" target="_blank" ><i class="fa fa-envelope-open" aria-hidden="true"></i></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <div class="Content-Card">
+                        <div class="imgBx-Card"><img src="Imagenes/Estudiante.jpg"></div>
+                        <div class="ContentBx-Card">
+                            <h3>Felipe Calderón <br><br><span>1590-18-0000</span></h3>
+                        </div>
+                    </div>
+                    <ul class="sci-card">
+                        <li style="--i:1"><a href="https://github.com/Felipe-Calderon" target="_blank" ><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                        <li style="--i:2"><a href="mailto:eorellanac4@miumg.edu.gt" target="_blank" ><i class="fa fa-envelope-open" aria-hidden="true"></i></i></a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <div class="copyright">
+            <p><strong>Copyrigth © 2021 | UMG <br> </strong>   
+                SEDE - Cuilapa, Santa Rosa <br>
+                Alumnos del 8vo Ciclo de Ingenieria en Sistemas de Información. 
+              
+            </p>
+        </div>
+
+        <script src="JS/Script.js"></script>
+        <script type="text/javascript" src="JS/vanilla-tilt.js"></script>
+        <script>
+            VanillaTilt.init(document.querySelectorAll(".card"),{ max: 25, speed: 150, glare: true, "max-glare": 0.5, });
+        </script>
+
+        </script>
+
+    </body>
+</html>
